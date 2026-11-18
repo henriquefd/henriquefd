@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Henrique Freitas Delfino · Physics and AI engineering</title>
+<meta name="description" content="Portfolio of Henrique Freitas Delfino, Physics student at UFRGS. OBEY, a local voice assistant with prompt-injection governance; METEO-SOL, sunshine-duration reconstruction with a Random Forest; antifungal resistance research at the UFRGS Biotechnology Center (CBiot).">
+<meta name="author" content="Henrique Freitas Delfino">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12110e" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://henriquefd.github.io/henriquefd/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://henriquefd.github.io/henriquefd/">
+<link rel="alternate" hreflang="en" href="https://henriquefd.github.io/henriquefd/en/">
+<link rel="alternate" hreflang="x-default" href="https://henriquefd.github.io/henriquefd/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Henrique Freitas Delfino · Physics and AI engineering">
+<meta property="og:description" content="Portfolio of Henrique Freitas Delfino, Physics student at UFRGS. OBEY, a local voice assistant with prompt-injection governance; METEO-SOL, sunshine-duration reconstruction with a Random Forest; antifungal resistance research at the UFRGS Biotechnology Center (CBiot).">
+<meta property="og:url" content="https://henriquefd.github.io/henriquefd/en/">
+<meta property="og:image" content="https://henriquefd.github.io/henriquefd/assets/img/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg?v=7853ee81e4" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=7853ee81e4">
+<link rel="preload" href="../assets/fonts/newsreader-300-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/fonts.css?v=f6fa222cce">
+<link rel="stylesheet" href="../assets/css/main.css?v=f6fa222cce">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}document.documentElement.classList.add('js')})();</script>
+<script src="../assets/js/main.js?v=f6fa222cce" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Henrique Freitas Delfino","url":"https://henriquefd.github.io/henriquefd/en/","image":"https://henriquefd.github.io/henriquefd/assets/img/henrique-retrato.jpg","email":"mailto:riquefd0103@gmail.com","telephone":"+55-51-99137-5180","jobTitle":"Physics student and ML research fellow","affiliation":{"@type":"CollegeOrUniversity","name":"Universidade Federal do Rio Grande do Sul (UFRGS)"},"address":{"@type":"PostalAddress","addressLocality":"Porto Alegre","addressRegion":"RS","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/henrique-delfino-186851209/","https://github.com/henriquefd"],"knowsLanguage":["pt-BR","en"]}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+
+<header class="top" data-top>
+  <div class="top-in">
+    <a class="mark" href="#inicio" aria-label="Top of page">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><g class="orbits" fill="none" stroke="currentColor" stroke-width="1.15"><ellipse cx="12" cy="12" rx="10.6" ry="4.1"/><ellipse cx="12" cy="12" rx="10.6" ry="4.1" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10.6" ry="4.1" transform="rotate(120 12 12)"/><g fill="currentColor" stroke="none"><circle cx="1.4" cy="12" r="1.3"/><circle cx="17.3" cy="21.18" r="1.3"/><circle cx="17.3" cy="2.82" r="1.3"/></g></g><circle cx="12" cy="12" r="1.9" fill="currentColor"/></svg>
+      <span>H. F. Delfino</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" data-nav-toggle>
+        <span class="nav-toggle-l">Menu</span><span class="nav-toggle-i" aria-hidden="true"></span>
+      </button>
+      <ul id="nav-list" class="nav-list" data-nav-list>
+        <li><a href="#obey" data-spy="obey">OBEY</a></li><li><a href="#meteo-sol" data-spy="meteo-sol">METEO-SOL</a></li><li><a href="#resgen" data-spy="resgen">ResGen</a></li><li><a href="#finova" data-spy="finova">FINOVA</a></li><li><a href="#trajetoria" data-spy="trajetoria">Background</a></li><li><a href="#contato" data-spy="contato">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language">
+        <a href="../index.html" hreflang="pt-BR" lang="pt-BR" data-lang-link aria-label="Português"><span class="flag" aria-hidden="true"><svg viewBox="0 0 20 14"><rect width="20" height="14" fill="#1f8a4c"/><path d="M10 1.6 18.2 7 10 12.4 1.8 7z" fill="#f3c623"/><circle cx="10" cy="7" r="3.1" fill="#1d3f8f"/><path d="M7.1 6.3c2-.6 4-.4 5.8.6" stroke="#fff" stroke-width=".6" fill="none"/></svg></span>PT</a><span aria-current="true"><span class="flag" aria-hidden="true"><svg viewBox="0 0 20 14"><rect width="20" height="14" fill="#1f3a7a"/><path d="M0 0 20 14M20 0 0 14" stroke="#fff" stroke-width="2.6"/><path d="M0 0 20 14M20 0 0 14" stroke="#c8202f" stroke-width=".9"/><path d="M10 0v14M0 7h20" stroke="#fff" stroke-width="4"/><path d="M10 0v14M0 7h20" stroke="#c8202f" stroke-width="2.2"/></svg></span>EN</span>
+      </div>
+      <button class="theme" type="button" data-theme-toggle aria-label="Toggle light and dark theme">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10 3.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
+</header>
+
+<main id="conteudo">
+
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="byline">
+        <picture>
+          <source srcset="../assets/img/henrique-retrato-320.webp" type="image/webp">
+          <img src="../assets/img/henrique-retrato.jpg" width="56" height="56" alt="Portrait of Henrique Freitas Delfino">
+        </picture>
+        <span>Physics at UFRGS<br>Porto Alegre, Brazil</span>
+      </p>
+      <h1 id="hero-title" class="hero-name"><span class="ln"><span>Henrique</span></span> <span class="ln"><span>Freitas Delfino</span></span></h1>
+      <p class="hero-lead">I study Physics at UFRGS and build AI software I use every day. OBEY, my local voice assistant, has 56,791 lines and 2,406 tests. At the UFRGS Biotechnology Center I trained a model that rebuilds climate series, and I am now building the pipeline to predict antifungal resistance.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#obey">See the projects</a>
+        <a class="btn" href="../assets/docs/henrique-delfino-curriculo.pdf" target="_blank" rel="noopener">Résumé (PDF, Portuguese)<span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <div class="field" data-field>
+        <canvas aria-hidden="true"></canvas>
+        <span class="field-tick t1" aria-hidden="true">S₁</span>
+        <span class="field-tick t2" aria-hidden="true" data-s2>S₂</span>
+        <button class="field-pause" type="button" data-field-pause aria-pressed="false" aria-label="Pause animation" data-label-play="Resume animation" data-label-pause="Pause animation">
+          <svg viewBox="0 0 12 12" aria-hidden="true"><path class="p-pause" d="M3 2h2v8H3zM7 2h2v8H7z"/><path class="p-play" d="M3 2l7 4-7 4z"/></svg>
+        </button>
+      </div>
+      <figcaption><span class="fig-n">Fig. 0</span> Two-source interference, I ∝ [sin(kr₁ − ωt) + sin(kr₂ − ωt)]². Hover or tap the figure to move source S₂.</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <dl class="hero-stats">
+      <div><dt>tests in OBEY, none failing</dt><dd>2,406</dd></div>
+      <div><dt>governance cost per action; the budget is 1 ms</dt><dd>0.376 ms</dd></div>
+      <div><dt>on the 213-day test set of the model that rebuilt 366 days of sunshine data</dt><dd>R² = 0.903</dd></div>
+      <div><dt>16th FINOVA, UFRGS, October 2026</dt><dd class="dd-text">Highlight Award</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="about wrap" aria-labelledby="about-title">
+  <h2 id="about-title" class="sr-only">About</h2>
+  <div class="about-grid">
+    <div class="about-text" data-reveal>
+      <p>I am in the 5th semester of a Physics bachelor's degree, expected to finish in the first half of 2028. The math I use every day comes from there: calculus, linear algebra, statistical mechanics, numerical methods and computational physics.</p>
+      <p>In the projects below, every number has a source. OBEY has latency budgets checked by benchmarks and executable checks for what its technical guide claims. <span class="nw">METEO-SOL</span> keeps sensor readings and model estimates in separate columns of the final file. Both write down what still does not work well.</p>
+      <p>From 2018 to 2023 I worked on automotive embedded electronics: reprogramming and cloning engine (injection), ABS and airbag ECUs, remapping and verifying checksums. It was my first contact with software where one wrong byte has physical consequences.</p>
+    </div>
+    <dl class="facts" data-reveal>
+      <div><dt>Education</dt><dd>B.Sc. in Physics, UFRGS. 5th semester, expected to finish in the first half of 2028</dd></div>
+      <div><dt>Research</dt><dd>Research fellow at the UFRGS Biotechnology Center (CBiot) since February 2026. Current BIT/CNPq fellowship plan: September 2026 to August 2027</dd></div>
+      <div><dt>Languages</dt><dd>Native Portuguese. Fluent English, Fisk advanced-level certificate</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 01 OBEY -->
+<section class="chapter" id="obey" aria-labelledby="obey-title">
+  <div class="wrap chapter-grid">
+    <div class="ch-top" data-reveal><p class="ch-n">01</p>
+        <p class="ch-k">Generative AI, agents and security</p></div>
+    <header class="ch-head" data-reveal>
+        <h2 id="obey-title">OBEY</h2>
+        <p class="ch-sub">A local voice assistant with agent orchestration and a deterministic core that decides what is allowed to run.</p>
+      </header>
+    <aside class="margin" aria-label="OBEY project notes">
+      <div class="margin-in">
+        <dl class="ficha">
+          <div><dt>Role</dt><dd>Creator and tech lead</dd></div>
+          <div><dt>Status</dt><dd>Version 3.4.3, November 2026</dd></div>
+          <div><dt>Stack</dt><dd>Python 3.13, PyQt6, Ollama, Faster-Whisper, ONNX Runtime, Silero VAD, Piper, MCP, OpenTelemetry, Pytest</dd></div>
+          <div><dt>Machine</dt><dd>Windows 11, RTX 3060 12 GB</dd></div>
+        </dl>
+        <a class="doclink" href="../assets/docs/obey-guia-do-projeto.pdf" target="_blank" rel="noopener"><span class="doclink-t">Project guide</span><span class="doclink-m">PDF, 182 pages, in Portuguese</span><span class="sr-only"> (PDF, opens in a new tab)</span></a>
+      </div>
+    </aside>
+    <div class="chapter-body">
+
+      <div class="prose" data-reveal>
+        <p>I say "Obey", speak a request and hear the answer. OBEY can read and organize files, run commands from an allowlist, search the web, read the focused window and remember facts about me. Large programming requests go to Claude, which plans, splits the work across Gemini agents and reviews the result.</p>
+        <p>Transcription, wake word, language models and speech synthesis all run on the machine. What leaves it is declared: web search, requests to Claude and computer-use tasks (those two only after confirmation), the search for a song requested by name and, if I turn it on, the remote voice, which only receives sentences not flagged as secret. There is no per-call cost; everything runs on subscriptions.</p>
+      </div>
+
+      <dl class="kpis" data-reveal>
+        <div><dd data-count="56791">56,791</dd><dt>lines across 187 modules</dt></div>
+        <div><dd data-count="2406">2,406</dd><dt>tests in 113 files, no failures</dt></div>
+        <div><dd data-count="27">27</dd><dt>governed tools</dt></div>
+        <div><dd>33/34</dd><dt>security invariants proven by execution; the other by code analysis</dt></div>
+      </dl>
+
+      <h3 class="h3" data-reveal>The model proposes, the runtime decides</h3>
+      <div class="prose" data-reveal>
+        <p>The prompt-injection defense follows the CaMeL pattern (Debenedetti et al., 2025). The language model never executes anything. It writes an intent, such as <code>[LER_ARQUIVO]: nota.txt</code>. A deterministic core turns the intent into a typed plan, checks where each argument came from, scores the risk of the concrete action and then runs it, asks, or refuses.</p>
+        <p>Each value's trust comes from its origin, defined in a single table in the code. Combining values keeps the lowest trust, and reloading a record from disk recomputes trust from the stored origin. A property test over 500 random programs checks that no transformation raises it.</p>
+      </div>
+
+      <figure class="fig fig-wide" data-reveal>
+        
+<div class="matrix-wrap">
+<table class="matrix" data-matrix>
+  <caption class="sr-only">Sinks each value origin can reach in OBEY</caption>
+  <thead><tr>
+    <th scope="col" class="matrix-corner"><span>sink →</span><span>origin ↓</span></th>
+    <th scope="col" title="on-screen display"><span class="vh"><code>UI_DISPLAY</code></span></th><th scope="col" title="quarantined reader"><span class="vh"><code>QUARANTINE_READER</code></span></th><th scope="col" title="planner prompt"><span class="vh"><code>PLANNER_PROMPT</code></span></th><th scope="col" title="file write"><span class="vh"><code>FILE_WRITE</code></span></th><th scope="col" title="shell argument"><span class="vh"><code>SHELL_ARG</code></span></th><th scope="col" title="network egress"><span class="vh"><code>NETWORK_OUT</code></span></th><th scope="col" title="memory write"><span class="vh"><code>MEMORY_WRITE</code></span></th>
+  </tr></thead>
+  <tbody>
+  <tr data-trust="HIGH">
+    <th scope="row"><span class="o-name">User speech</span><span class="o-meta"><code>USER_SPEECH</code> <span class="trust trust-high">HIGH</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td>
+  </tr><tr data-trust="HIGH">
+    <th scope="row"><span class="o-name">Chat text</span><span class="o-meta"><code>USER_TEXT</code> <span class="trust trust-high">HIGH</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td>
+  </tr><tr data-trust="MEDIUM">
+    <th scope="row"><span class="o-name">Local model</span><span class="o-meta"><code>LLM_LOCAL</code> <span class="trust trust-medium">MEDIUM</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td>
+  </tr><tr data-trust="MEDIUM">
+    <th scope="row"><span class="o-name">Tool output</span><span class="o-meta"><code>TOOL_OUTPUT</code> <span class="trust trust-medium">MEDIUM</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td>
+  </tr><tr data-trust="UNTRUSTED">
+    <th scope="row"><span class="o-name">Web page</span><span class="o-meta"><code>WEB</code> <span class="trust trust-untrusted">UNTRUSTED</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td>
+  </tr><tr data-trust="UNTRUSTED">
+    <th scope="row"><span class="o-name">Screen text</span><span class="o-meta"><code>SCREEN</code> <span class="trust trust-untrusted">UNTRUSTED</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td>
+  </tr><tr data-trust="UNTRUSTED">
+    <th scope="row"><span class="o-name">Email</span><span class="o-meta"><code>EMAIL</code> <span class="trust trust-untrusted">UNTRUSTED</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td>
+  </tr><tr data-trust="UNTRUSTED">
+    <th scope="row"><span class="o-name">Third-party MCP server</span><span class="o-meta"><code>MCP_SERVER</code> <span class="trust trust-untrusted">UNTRUSTED</span></span></th>
+    <td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="ok"><span class="cell" aria-hidden="true"></span><span class="sr-only">allowed</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td><td class="no"><span class="cell" aria-hidden="true"></span><span class="sr-only">blocked</span></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+        <figcaption><span class="fig-n">Fig. 1</span> Sinks each origin can reach. An UNTRUSTED value only reaches the screen and the quarantined reader, a tool-less model that returns short fields in a fixed schema. The figure shows 8 of the 16 origins and 7 of the 12 sinks in the code. Hover a row to highlight it (on touch screens, tap it).</figcaption>
+      </figure>
+
+      <div class="prose" data-reveal>
+        <ul class="ticks">
+          <li>Risk is scored on the concrete action: reading a file is LOW, <code>git status</code> is HIGH (every shell command asks for confirmation), <code>git reset --hard</code> is CRITICAL. A tool with no declared risk is forbidden, and no confirmation unlocks PROHIBITED.</li>
+          <li>A confirmation creates a record bound to the SHA-256 hash of the tool plus its sorted arguments, valid for 120 s and usable once. Approving <code>git status</code> does not approve <code>git commit</code>.</li>
+          <li>A second axis tracks secrecy (PUBLICO, PESSOAL, SECRETO: public, personal, secret). Detectors for Brazilian CPF numbers, cards, private keys and tokens tag the value, and a SECRETO value never reaches the network, the voice, the terminal or an external provider.</li>
+          <li>Fail closed: an exception during authorization turns on Safe Mode and denies. PowerShell commands go through a parser and an allowlist, and run inside a Windows Job Object with memory and process limits.</li>
+        </ul>
+        <p>For the adversarial evaluation I crossed the 16 attack families from the AgentDojo corpus with 4 hostile origins and 7 privileged sinks, and no combination got through. I added 38 vectors of my own in 7 categories: tag injection, PowerShell, paths, memory, screen, MCP and exfiltration. This shows the barriers hold against published injection families; I have not run the official AgentDojo benchmark.</p>
+      </div>
+
+      <h3 class="h3" data-reveal>One turn, from voice to answer</h3>
+      <figure class="fig" data-reveal>
+        
+<ol class="turn" data-turn>
+<li class="turn-step" style="--i:0">
+    <span class="turn-idx">01</span>
+    <span class="turn-name">Sentinel</span>
+    <span class="turn-how">openWakeWord with an ONNX model trained on my voice</span>
+    <span class="turn-num">1.84 ms per 80 ms frame</span>
+  </li><li class="turn-step" style="--i:1">
+    <span class="turn-idx">02</span>
+    <span class="turn-name">End of speech</span>
+    <span class="turn-how">Silero VAD and Smart Turn v3.2 judge whether the sentence ended</span>
+    <span class="turn-num">starts judging after 0.3 s of silence</span>
+  </li><li class="turn-step" style="--i:2">
+    <span class="turn-idx">03</span>
+    <span class="turn-name">Transcription</span>
+    <span class="turn-how">Faster-Whisper large-v3-turbo on the GPU</span>
+    <span class="turn-num">353 ms per sentence, 3.8% word error rate</span>
+  </li><li class="turn-step" style="--i:3">
+    <span class="turn-idx">04</span>
+    <span class="turn-name">Router</span>
+    <span class="turn-how">whole-word regex, 12 intents; "what time is it?" never reaches a model</span>
+    <span class="turn-num">0.028 ms per sentence</span>
+  </li><li class="turn-step" style="--i:4">
+    <span class="turn-idx">05</span>
+    <span class="turn-name">Model</span>
+    <span class="turn-how">gemma4:e2b or qwen3.8:27b on Ollama, picked by complexity</span>
+    <span class="turn-num">131 ms to first token</span>
+  </li><li class="turn-step" style="--i:5">
+    <span class="turn-idx">06</span>
+    <span class="turn-name">Kernel</span>
+    <span class="turn-how">typed plan, capabilities, risk and consent</span>
+    <span class="turn-num">0.376 ms per action</span>
+  </li><li class="turn-step" style="--i:6">
+    <span class="turn-idx">07</span>
+    <span class="turn-name">Voice</span>
+    <span class="turn-how">local Piper, sentence by sentence while the model is still writing</span>
+    <span class="turn-num">barge-in cuts speech in 0.20 ms</span>
+  </li>
+</ol>
+        <figcaption><span class="fig-n">Fig. 2</span> The stages of one turn with values measured on the RTX 3060. Transcription was measured on 40 sentences recorded with the microphone I use every day; time to first token is the median of turns 2 to 10 on gemma4:e2b.</figcaption>
+      </figure>
+
+      <div class="prose" data-reveal>
+        <p>Ollama's cache only reuses the identical leading part of two requests. I moved the clock and per-turn context out of the system prompt so the prefix stays stable. Time to first token dropped from 12.6 s to 3.0 s on qwen3.8:27b (−76%) and from 336 ms to 131 ms on gemma4:e2b, and it no longer grows with the conversation.</p>
+      </div>
+
+      <figure class="fig" data-reveal>
+        
+<div class="budgets" role="list">
+<div class="budget" role="listitem">
+    <span class="budget-label">Intent router, per sentence</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.2800"></span></span>
+    <span class="budget-val"><b>0.028</b> / 0.10 ms</span>
+  </div><div class="budget" role="listitem">
+    <span class="budget-label">Tag scan, 3,000 tokens</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.7700"></span></span>
+    <span class="budget-val"><b>0.77</b> / 1.0 ms</span>
+  </div><div class="budget" role="listitem">
+    <span class="budget-label">Governance per action</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.3760"></span></span>
+    <span class="budget-val"><b>0.376</b> / 1.0 ms</span>
+  </div><div class="budget" role="listitem">
+    <span class="budget-label">Consent check, no human in the loop</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.0960"></span></span>
+    <span class="budget-val"><b>0.048</b> / 0.5 ms</span>
+  </div><div class="budget" role="listitem">
+    <span class="budget-label">5-step plan</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.3328"></span></span>
+    <span class="budget-val"><b>1.664</b> / 5 ms</span>
+  </div><div class="budget" role="listitem">
+    <span class="budget-label">Quarantine, simple page</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.7250"></span></span>
+    <span class="budget-val"><b>0.58</b> / 0.8 s</span>
+  </div><div class="budget" role="listitem">
+    <span class="budget-label">Barge-in, signal to cut</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.0133"></span></span>
+    <span class="budget-val"><b>0.20</b> / 15 ms</span>
+  </div><div class="budget" role="listitem">
+    <span class="budget-label">Sentinel RAM, peak</span>
+    <span class="budget-bar" aria-hidden="true"><span class="budget-fill" style="--r:0.8867"></span></span>
+    <span class="budget-val"><b>133</b> / 150 MB</span>
+  </div>
+</div>
+        <figcaption><span class="fig-n">Fig. 3</span> Measured value as a fraction of each operation's budget. Every phase that touches the action path reruns the benchmark, so governance never gets slow enough that someone wants to switch it off.</figcaption>
+      </figure>
+
+      <h3 class="h3" data-reveal>Architecture and method</h3>
+      <figure class="fig" data-reveal>
+        <div class="layers" aria-hidden="true">
+          <div class="layer"><b>Interface</b><span>PyQt6: overlay, tray, chat, settings</span><code>obey/ui</code></div>
+          <div class="layer"><b>Core</b><span>ObeyAgent: state machine and turn pipeline</span><code>obey/core</code></div>
+          <div class="layer layer-split">
+            <div><b>Audio</b><code>audio</code></div>
+            <div><b>Brain and routing</b><code>brain, routing</code></div>
+            <div><b>Memory</b><code>memory</code></div>
+            <div><b>Governed executor</b><code>agents, tasks</code></div>
+          </div>
+          <div class="layer layer-k"><b>Security kernel</b><span>capabilities, plan, risk, consent, audit</span><code>obey/security</code></div>
+          <div class="layer"><b>27 tools</b><span>with a sandbox as a second barrier</span><code>obey/tools</code></div>
+        </div>
+        <p class="sr-only">Layers, top to bottom: PyQt6 interface; ObeyAgent core; audio, brain and routing, memory and governed executor; security kernel; 27 tools with a sandbox.</p>
+        <figcaption><span class="fig-n">Fig. 4</span> Each layer only knows the ones below it. The kernel imports neither tools nor agents, and the suite checks this through code analysis. Audit trail in JSONL following the OpenTelemetry GenAI semantic conventions.</figcaption>
+      </figure>
+      <div class="prose" data-reveal>
+        <p>I run OBEY as tech lead, with AI agents writing parts of the code. That is why every fix follows the same routine: reproduce the defect in a throwaway temp directory, write the failing test, fix it, remove the fix to watch the test fail again (manual mutation) and run the full suite. The technical guide has 134 claims tied to executable checks, and all 134 pass.</p>
+      </div>
+
+      <aside class="limits" data-reveal aria-labelledby="obey-limits">
+        <h4 id="obey-limits">What is not guaranteed yet</h4>
+        <ul>
+          <li>The Job Object limits memory and processes but does not isolate files, network or privileges. That is why CRITICAL actions are refused instead of running with weaker protection.</li>
+          <li>The audit trail has no hash chaining, so anyone with disk access can edit it.</li>
+          <li>On the tag path the plan only receives literals written by the model, which start as MEDIUM even when copied from a hostile page. Against web injection, protection comes from the quarantine, the tainted-conversation flag, the command allowlist and human confirmation.</li>
+        </ul>
+        <p>Next step: a Windows process container for the cloud models (Claude, Gemini) and for commands.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 02 METEO-SOL -->
+<section class="chapter" id="meteo-sol" aria-labelledby="meteo-title">
+  <div class="wrap chapter-grid">
+    <div class="ch-top" data-reveal><p class="ch-n">02</p>
+        <p class="ch-k">ML pipeline and data product</p></div>
+    <header class="ch-head" data-reveal>
+        <h2 id="meteo-title"><span class="nw">METEO-SOL</span></h2>
+        <p class="ch-sub">Rebuilding 366 days of sunshine duration in Porto Alegre with a Random Forest, shipped as a desktop app.</p>
+      </header>
+    <aside class="margin" aria-label="METEO-SOL project notes">
+      <div class="margin-in">
+        <dl class="ficha">
+          <div><dt>Role</dt><dd>Creator and developer</dd></div>
+          <div><dt>Context</dt><dd>UFRGS Biotechnology Center (CBiot), supporting Mauren Larangeira's PhD</dd></div>
+          <div><dt>Data</dt><dd>INMET, stations A801 and 83967, 2022 to 2025</dd></div>
+          <div><dt>Stack</dt><dd>Python 3.13, pandas, NumPy, scikit-learn 1.8, Joblib, Eel, Plotly.js, PyInstaller</dd></div>
+        </dl>
+        <a class="doclink" href="../assets/docs/meteo-sol-dossie.pdf" target="_blank" rel="noopener"><span class="doclink-t">Technical dossier</span><span class="doclink-m">PDF, 14 pages, in Portuguese</span><span class="sr-only"> (PDF, opens in a new tab)</span></a>
+      </div>
+    </aside>
+    <div class="chapter-body">
+      <div class="prose" data-reveal>
+        <p>INMET's automatic station A801, at the Porto Alegre Botanical Garden, measures global solar radiation every hour but has no sunshine recorder. Conventional station 83967 sits at the same spot (−30.0536°, −51.1747°, 41.18 m) and records daily sunshine duration. Between 2022 and 2025 it missed 394 days, 363 of them in 2025.</p>
+        <p>Because both stations share the site, terrain, local clouds and microclimate are the same for the predictor sensor and the target sensor. I used the 1,061 days when both worked to teach a model to estimate sunshine hours from A801's sensors. The WMO counts sunshine duration as the time direct irradiance stays above 120 W/m²; the model maps the day's integrated energy and the air's temperature and humidity state onto that duration.</p>
+      </div>
+
+      <figure class="fig fig-wide" data-reveal>
+        <div class="strip-wrap"><svg class="strip" viewBox="0 0 689 109" role="img" aria-labelledby="strip-t">
+  <title id="strip-t">Calendar of 2025 at station 83967: 2 days measured by the sunshine recorder (January 3 and 5), 28 days left out (April 11 to May 8, no wind data at A801) and 335 days estimated by the model.</title>
+  <g class="strip-labels" aria-hidden="true"><text x="0" y="11">Jan</text><text x="65" y="11">Feb</text><text x="117" y="11">Mar</text><text x="169" y="11">Apr</text><text x="221" y="11">May</text><text x="286" y="11">Jun</text><text x="338" y="11">Jul</text><text x="403" y="11">Aug</text><text x="455" y="11">Sep</text><text x="507" y="11">Oct</text><text x="572" y="11">Nov</text><text x="624" y="11">Dec</text></g>
+  <g aria-hidden="true"><rect class="rec" x="0" y="44" width="11" height="11" style="--c:0"/><rect class="rec" x="0" y="57" width="11" height="11" style="--c:0"/><rect class="mea" x="0" y="70" width="11" height="11" style="--c:0"/><rect class="rec" x="0" y="83" width="11" height="11" style="--c:0"/><rect class="mea" x="0" y="96" width="11" height="11" style="--c:0"/><rect class="rec" x="13" y="18" width="11" height="11" style="--c:1"/><rect class="rec" x="13" y="31" width="11" height="11" style="--c:1"/><rect class="rec" x="13" y="44" width="11" height="11" style="--c:1"/><rect class="rec" x="13" y="57" width="11" height="11" style="--c:1"/><rect class="rec" x="13" y="70" width="11" height="11" style="--c:1"/><rect class="rec" x="13" y="83" width="11" height="11" style="--c:1"/><rect class="rec" x="13" y="96" width="11" height="11" style="--c:1"/><rect class="rec" x="26" y="18" width="11" height="11" style="--c:2"/><rect class="rec" x="26" y="31" width="11" height="11" style="--c:2"/><rect class="rec" x="26" y="44" width="11" height="11" style="--c:2"/><rect class="rec" x="26" y="57" width="11" height="11" style="--c:2"/><rect class="rec" x="26" y="70" width="11" height="11" style="--c:2"/><rect class="rec" x="26" y="83" width="11" height="11" style="--c:2"/><rect class="rec" x="26" y="96" width="11" height="11" style="--c:2"/><rect class="rec" x="39" y="18" width="11" height="11" style="--c:3"/><rect class="rec" x="39" y="31" width="11" height="11" style="--c:3"/><rect class="rec" x="39" y="44" width="11" height="11" style="--c:3"/><rect class="rec" x="39" y="57" width="11" height="11" style="--c:3"/><rect class="rec" x="39" y="70" width="11" height="11" style="--c:3"/><rect class="rec" x="39" y="83" width="11" height="11" style="--c:3"/><rect class="rec" x="39" y="96" width="11" height="11" style="--c:3"/><rect class="rec" x="52" y="18" width="11" height="11" style="--c:4"/><rect class="rec" x="52" y="31" width="11" height="11" style="--c:4"/><rect class="rec" x="52" y="44" width="11" height="11" style="--c:4"/><rect class="rec" x="52" y="57" width="11" height="11" style="--c:4"/><rect class="rec" x="52" y="70" width="11" height="11" style="--c:4"/><rect class="rec" x="52" y="83" width="11" height="11" style="--c:4"/><rect class="rec" x="52" y="96" width="11" height="11" style="--c:4"/><rect class="rec" x="65" y="18" width="11" height="11" style="--c:5"/><rect class="rec" x="65" y="31" width="11" height="11" style="--c:5"/><rect class="rec" x="65" y="44" width="11" height="11" style="--c:5"/><rect class="rec" x="65" y="57" width="11" height="11" style="--c:5"/><rect class="rec" x="65" y="70" width="11" height="11" style="--c:5"/><rect class="rec" x="65" y="83" width="11" height="11" style="--c:5"/><rect class="rec" x="65" y="96" width="11" height="11" style="--c:5"/><rect class="rec" x="78" y="18" width="11" height="11" style="--c:6"/><rect class="rec" x="78" y="31" width="11" height="11" style="--c:6"/><rect class="rec" x="78" y="44" width="11" height="11" style="--c:6"/><rect class="rec" x="78" y="57" width="11" height="11" style="--c:6"/><rect class="rec" x="78" y="70" width="11" height="11" style="--c:6"/><rect class="rec" x="78" y="83" width="11" height="11" style="--c:6"/><rect class="rec" x="78" y="96" width="11" height="11" style="--c:6"/><rect class="rec" x="91" y="18" width="11" height="11" style="--c:7"/><rect class="rec" x="91" y="31" width="11" height="11" style="--c:7"/><rect class="rec" x="91" y="44" width="11" height="11" style="--c:7"/><rect class="rec" x="91" y="57" width="11" height="11" style="--c:7"/><rect class="rec" x="91" y="70" width="11" height="11" style="--c:7"/><rect class="rec" x="91" y="83" width="11" height="11" style="--c:7"/><rect class="rec" x="91" y="96" width="11" height="11" style="--c:7"/><rect class="rec" x="104" y="18" width="11" height="11" style="--c:8"/><rect class="rec" x="104" y="31" width="11" height="11" style="--c:8"/><rect class="rec" x="104" y="44" width="11" height="11" style="--c:8"/><rect class="rec" x="104" y="57" width="11" height="11" style="--c:8"/><rect class="rec" x="104" y="70" width="11" height="11" style="--c:8"/><rect class="rec" x="104" y="83" width="11" height="11" style="--c:8"/><rect class="rec" x="104" y="96" width="11" height="11" style="--c:8"/><rect class="rec" x="117" y="18" width="11" height="11" style="--c:9"/><rect class="rec" x="117" y="31" width="11" height="11" style="--c:9"/><rect class="rec" x="117" y="44" width="11" height="11" style="--c:9"/><rect class="rec" x="117" y="57" width="11" height="11" style="--c:9"/><rect class="rec" x="117" y="70" width="11" height="11" style="--c:9"/><rect class="rec" x="117" y="83" width="11" height="11" style="--c:9"/><rect class="rec" x="117" y="96" width="11" height="11" style="--c:9"/><rect class="rec" x="130" y="18" width="11" height="11" style="--c:10"/><rect class="rec" x="130" y="31" width="11" height="11" style="--c:10"/><rect class="rec" x="130" y="44" width="11" height="11" style="--c:10"/><rect class="rec" x="130" y="57" width="11" height="11" style="--c:10"/><rect class="rec" x="130" y="70" width="11" height="11" style="--c:10"/><rect class="rec" x="130" y="83" width="11" height="11" style="--c:10"/><rect class="rec" x="130" y="96" width="11" height="11" style="--c:10"/><rect class="rec" x="143" y="18" width="11" height="11" style="--c:11"/><rect class="rec" x="143" y="31" width="11" height="11" style="--c:11"/><rect class="rec" x="143" y="44" width="11" height="11" style="--c:11"/><rect class="rec" x="143" y="57" width="11" height="11" style="--c:11"/><rect class="rec" x="143" y="70" width="11" height="11" style="--c:11"/><rect class="rec" x="143" y="83" width="11" height="11" style="--c:11"/><rect class="rec" x="143" y="96" width="11" height="11" style="--c:11"/><rect class="rec" x="156" y="18" width="11" height="11" style="--c:12"/><rect class="rec" x="156" y="31" width="11" height="11" style="--c:12"/><rect class="rec" x="156" y="44" width="11" height="11" style="--c:12"/><rect class="rec" x="156" y="57" width="11" height="11" style="--c:12"/><rect class="rec" x="156" y="70" width="11" height="11" style="--c:12"/><rect class="rec" x="156" y="83" width="11" height="11" style="--c:12"/><rect class="rec" x="156" y="96" width="11" height="11" style="--c:12"/><rect class="rec" x="169" y="18" width="11" height="11" style="--c:13"/><rect class="rec" x="169" y="31" width="11" height="11" style="--c:13"/><rect class="rec" x="169" y="44" width="11" height="11" style="--c:13"/><rect class="rec" x="169" y="57" width="11" height="11" style="--c:13"/><rect class="rec" x="169" y="70" width="11" height="11" style="--c:13"/><rect class="rec" x="169" y="83" width="11" height="11" style="--c:13"/><rect class="rec" x="169" y="96" width="11" height="11" style="--c:13"/><rect class="rec" x="182" y="18" width="11" height="11" style="--c:14"/><rect class="rec" x="182" y="31" width="11" height="11" style="--c:14"/><rect class="rec" x="182" y="44" width="11" height="11" style="--c:14"/><rect class="rec" x="182" y="57" width="11" height="11" style="--c:14"/><rect class="exc" x="182" y="70" width="11" height="11" style="--c:14"/><rect class="exc" x="182" y="83" width="11" height="11" style="--c:14"/><rect class="exc" x="182" y="96" width="11" height="11" style="--c:14"/><rect class="exc" x="195" y="18" width="11" height="11" style="--c:15"/><rect class="exc" x="195" y="31" width="11" height="11" style="--c:15"/><rect class="exc" x="195" y="44" width="11" height="11" style="--c:15"/><rect class="exc" x="195" y="57" width="11" height="11" style="--c:15"/><rect class="exc" x="195" y="70" width="11" height="11" style="--c:15"/><rect class="exc" x="195" y="83" width="11" height="11" style="--c:15"/><rect class="exc" x="195" y="96" width="11" height="11" style="--c:15"/><rect class="exc" x="208" y="18" width="11" height="11" style="--c:16"/><rect class="exc" x="208" y="31" width="11" height="11" style="--c:16"/><rect class="exc" x="208" y="44" width="11" height="11" style="--c:16"/><rect class="exc" x="208" y="57" width="11" height="11" style="--c:16"/><rect class="exc" x="208" y="70" width="11" height="11" style="--c:16"/><rect class="exc" x="208" y="83" width="11" height="11" style="--c:16"/><rect class="exc" x="208" y="96" width="11" height="11" style="--c:16"/><rect class="exc" x="221" y="18" width="11" height="11" style="--c:17"/><rect class="exc" x="221" y="31" width="11" height="11" style="--c:17"/><rect class="exc" x="221" y="44" width="11" height="11" style="--c:17"/><rect class="exc" x="221" y="57" width="11" height="11" style="--c:17"/><rect class="exc" x="221" y="70" width="11" height="11" style="--c:17"/><rect class="exc" x="221" y="83" width="11" height="11" style="--c:17"/><rect class="exc" x="221" y="96" width="11" height="11" style="--c:17"/><rect class="exc" x="234" y="18" width="11" height="11" style="--c:18"/><rect class="exc" x="234" y="31" width="11" height="11" style="--c:18"/><rect class="exc" x="234" y="44" width="11" height="11" style="--c:18"/><rect class="exc" x="234" y="57" width="11" height="11" style="--c:18"/><rect class="rec" x="234" y="70" width="11" height="11" style="--c:18"/><rect class="rec" x="234" y="83" width="11" height="11" style="--c:18"/><rect class="rec" x="234" y="96" width="11" height="11" style="--c:18"/><rect class="rec" x="247" y="18" width="11" height="11" style="--c:19"/><rect class="rec" x="247" y="31" width="11" height="11" style="--c:19"/><rect class="rec" x="247" y="44" width="11" height="11" style="--c:19"/><rect class="rec" x="247" y="57" width="11" height="11" style="--c:19"/><rect class="rec" x="247" y="70" width="11" height="11" style="--c:19"/><rect class="rec" x="247" y="83" width="11" height="11" style="--c:19"/><rect class="rec" x="247" y="96" width="11" height="11" style="--c:19"/><rect class="rec" x="260" y="18" width="11" height="11" style="--c:20"/><rect class="rec" x="260" y="31" width="11" height="11" style="--c:20"/><rect class="rec" x="260" y="44" width="11" height="11" style="--c:20"/><rect class="rec" x="260" y="57" width="11" height="11" style="--c:20"/><rect class="rec" x="260" y="70" width="11" height="11" style="--c:20"/><rect class="rec" x="260" y="83" width="11" height="11" style="--c:20"/><rect class="rec" x="260" y="96" width="11" height="11" style="--c:20"/><rect class="rec" x="273" y="18" width="11" height="11" style="--c:21"/><rect class="rec" x="273" y="31" width="11" height="11" style="--c:21"/><rect class="rec" x="273" y="44" width="11" height="11" style="--c:21"/><rect class="rec" x="273" y="57" width="11" height="11" style="--c:21"/><rect class="rec" x="273" y="70" width="11" height="11" style="--c:21"/><rect class="rec" x="273" y="83" width="11" height="11" style="--c:21"/><rect class="rec" x="273" y="96" width="11" height="11" style="--c:21"/><rect class="rec" x="286" y="18" width="11" height="11" style="--c:22"/><rect class="rec" x="286" y="31" width="11" height="11" style="--c:22"/><rect class="rec" x="286" y="44" width="11" height="11" style="--c:22"/><rect class="rec" x="286" y="57" width="11" height="11" style="--c:22"/><rect class="rec" x="286" y="70" width="11" height="11" style="--c:22"/><rect class="rec" x="286" y="83" width="11" height="11" style="--c:22"/><rect class="rec" x="286" y="96" width="11" height="11" style="--c:22"/><rect class="rec" x="299" y="18" width="11" height="11" style="--c:23"/><rect class="rec" x="299" y="31" width="11" height="11" style="--c:23"/><rect class="rec" x="299" y="44" width="11" height="11" style="--c:23"/><rect class="rec" x="299" y="57" width="11" height="11" style="--c:23"/><rect class="rec" x="299" y="70" width="11" height="11" style="--c:23"/><rect class="rec" x="299" y="83" width="11" height="11" style="--c:23"/><rect class="rec" x="299" y="96" width="11" height="11" style="--c:23"/><rect class="rec" x="312" y="18" width="11" height="11" style="--c:24"/><rect class="rec" x="312" y="31" width="11" height="11" style="--c:24"/><rect class="rec" x="312" y="44" width="11" height="11" style="--c:24"/><rect class="rec" x="312" y="57" width="11" height="11" style="--c:24"/><rect class="rec" x="312" y="70" width="11" height="11" style="--c:24"/><rect class="rec" x="312" y="83" width="11" height="11" style="--c:24"/><rect class="rec" x="312" y="96" width="11" height="11" style="--c:24"/><rect class="rec" x="325" y="18" width="11" height="11" style="--c:25"/><rect class="rec" x="325" y="31" width="11" height="11" style="--c:25"/><rect class="rec" x="325" y="44" width="11" height="11" style="--c:25"/><rect class="rec" x="325" y="57" width="11" height="11" style="--c:25"/><rect class="rec" x="325" y="70" width="11" height="11" style="--c:25"/><rect class="rec" x="325" y="83" width="11" height="11" style="--c:25"/><rect class="rec" x="325" y="96" width="11" height="11" style="--c:25"/><rect class="rec" x="338" y="18" width="11" height="11" style="--c:26"/><rect class="rec" x="338" y="31" width="11" height="11" style="--c:26"/><rect class="rec" x="338" y="44" width="11" height="11" style="--c:26"/><rect class="rec" x="338" y="57" width="11" height="11" style="--c:26"/><rect class="rec" x="338" y="70" width="11" height="11" style="--c:26"/><rect class="rec" x="338" y="83" width="11" height="11" style="--c:26"/><rect class="rec" x="338" y="96" width="11" height="11" style="--c:26"/><rect class="rec" x="351" y="18" width="11" height="11" style="--c:27"/><rect class="rec" x="351" y="31" width="11" height="11" style="--c:27"/><rect class="rec" x="351" y="44" width="11" height="11" style="--c:27"/><rect class="rec" x="351" y="57" width="11" height="11" style="--c:27"/><rect class="rec" x="351" y="70" width="11" height="11" style="--c:27"/><rect class="rec" x="351" y="83" width="11" height="11" style="--c:27"/><rect class="rec" x="351" y="96" width="11" height="11" style="--c:27"/><rect class="rec" x="364" y="18" width="11" height="11" style="--c:28"/><rect class="rec" x="364" y="31" width="11" height="11" style="--c:28"/><rect class="rec" x="364" y="44" width="11" height="11" style="--c:28"/><rect class="rec" x="364" y="57" width="11" height="11" style="--c:28"/><rect class="rec" x="364" y="70" width="11" height="11" style="--c:28"/><rect class="rec" x="364" y="83" width="11" height="11" style="--c:28"/><rect class="rec" x="364" y="96" width="11" height="11" style="--c:28"/><rect class="rec" x="377" y="18" width="11" height="11" style="--c:29"/><rect class="rec" x="377" y="31" width="11" height="11" style="--c:29"/><rect class="rec" x="377" y="44" width="11" height="11" style="--c:29"/><rect class="rec" x="377" y="57" width="11" height="11" style="--c:29"/><rect class="rec" x="377" y="70" width="11" height="11" style="--c:29"/><rect class="rec" x="377" y="83" width="11" height="11" style="--c:29"/><rect class="rec" x="377" y="96" width="11" height="11" style="--c:29"/><rect class="rec" x="390" y="18" width="11" height="11" style="--c:30"/><rect class="rec" x="390" y="31" width="11" height="11" style="--c:30"/><rect class="rec" x="390" y="44" width="11" height="11" style="--c:30"/><rect class="rec" x="390" y="57" width="11" height="11" style="--c:30"/><rect class="rec" x="390" y="70" width="11" height="11" style="--c:30"/><rect class="rec" x="390" y="83" width="11" height="11" style="--c:30"/><rect class="rec" x="390" y="96" width="11" height="11" style="--c:30"/><rect class="rec" x="403" y="18" width="11" height="11" style="--c:31"/><rect class="rec" x="403" y="31" width="11" height="11" style="--c:31"/><rect class="rec" x="403" y="44" width="11" height="11" style="--c:31"/><rect class="rec" x="403" y="57" width="11" height="11" style="--c:31"/><rect class="rec" x="403" y="70" width="11" height="11" style="--c:31"/><rect class="rec" x="403" y="83" width="11" height="11" style="--c:31"/><rect class="rec" x="403" y="96" width="11" height="11" style="--c:31"/><rect class="rec" x="416" y="18" width="11" height="11" style="--c:32"/><rect class="rec" x="416" y="31" width="11" height="11" style="--c:32"/><rect class="rec" x="416" y="44" width="11" height="11" style="--c:32"/><rect class="rec" x="416" y="57" width="11" height="11" style="--c:32"/><rect class="rec" x="416" y="70" width="11" height="11" style="--c:32"/><rect class="rec" x="416" y="83" width="11" height="11" style="--c:32"/><rect class="rec" x="416" y="96" width="11" height="11" style="--c:32"/><rect class="rec" x="429" y="18" width="11" height="11" style="--c:33"/><rect class="rec" x="429" y="31" width="11" height="11" style="--c:33"/><rect class="rec" x="429" y="44" width="11" height="11" style="--c:33"/><rect class="rec" x="429" y="57" width="11" height="11" style="--c:33"/><rect class="rec" x="429" y="70" width="11" height="11" style="--c:33"/><rect class="rec" x="429" y="83" width="11" height="11" style="--c:33"/><rect class="rec" x="429" y="96" width="11" height="11" style="--c:33"/><rect class="rec" x="442" y="18" width="11" height="11" style="--c:34"/><rect class="rec" x="442" y="31" width="11" height="11" style="--c:34"/><rect class="rec" x="442" y="44" width="11" height="11" style="--c:34"/><rect class="rec" x="442" y="57" width="11" height="11" style="--c:34"/><rect class="rec" x="442" y="70" width="11" height="11" style="--c:34"/><rect class="rec" x="442" y="83" width="11" height="11" style="--c:34"/><rect class="rec" x="442" y="96" width="11" height="11" style="--c:34"/><rect class="rec" x="455" y="18" width="11" height="11" style="--c:35"/><rect class="rec" x="455" y="31" width="11" height="11" style="--c:35"/><rect class="rec" x="455" y="44" width="11" height="11" style="--c:35"/><rect class="rec" x="455" y="57" width="11" height="11" style="--c:35"/><rect class="rec" x="455" y="70" width="11" height="11" style="--c:35"/><rect class="rec" x="455" y="83" width="11" height="11" style="--c:35"/><rect class="rec" x="455" y="96" width="11" height="11" style="--c:35"/><rect class="rec" x="468" y="18" width="11" height="11" style="--c:36"/><rect class="rec" x="468" y="31" width="11" height="11" style="--c:36"/><rect class="rec" x="468" y="44" width="11" height="11" style="--c:36"/><rect class="rec" x="468" y="57" width="11" height="11" style="--c:36"/><rect class="rec" x="468" y="70" width="11" height="11" style="--c:36"/><rect class="rec" x="468" y="83" width="11" height="11" style="--c:36"/><rect class="rec" x="468" y="96" width="11" height="11" style="--c:36"/><rect class="rec" x="481" y="18" width="11" height="11" style="--c:37"/><rect class="rec" x="481" y="31" width="11" height="11" style="--c:37"/><rect class="rec" x="481" y="44" width="11" height="11" style="--c:37"/><rect class="rec" x="481" y="57" width="11" height="11" style="--c:37"/><rect class="rec" x="481" y="70" width="11" height="11" style="--c:37"/><rect class="rec" x="481" y="83" width="11" height="11" style="--c:37"/><rect class="rec" x="481" y="96" width="11" height="11" style="--c:37"/><rect class="rec" x="494" y="18" width="11" height="11" style="--c:38"/><rect class="rec" x="494" y="31" width="11" height="11" style="--c:38"/><rect class="rec" x="494" y="44" width="11" height="11" style="--c:38"/><rect class="rec" x="494" y="57" width="11" height="11" style="--c:38"/><rect class="rec" x="494" y="70" width="11" height="11" style="--c:38"/><rect class="rec" x="494" y="83" width="11" height="11" style="--c:38"/><rect class="rec" x="494" y="96" width="11" height="11" style="--c:38"/><rect class="rec" x="507" y="18" width="11" height="11" style="--c:39"/><rect class="rec" x="507" y="31" width="11" height="11" style="--c:39"/><rect class="rec" x="507" y="44" width="11" height="11" style="--c:39"/><rect class="rec" x="507" y="57" width="11" height="11" style="--c:39"/><rect class="rec" x="507" y="70" width="11" height="11" style="--c:39"/><rect class="rec" x="507" y="83" width="11" height="11" style="--c:39"/><rect class="rec" x="507" y="96" width="11" height="11" style="--c:39"/><rect class="rec" x="520" y="18" width="11" height="11" style="--c:40"/><rect class="rec" x="520" y="31" width="11" height="11" style="--c:40"/><rect class="rec" x="520" y="44" width="11" height="11" style="--c:40"/><rect class="rec" x="520" y="57" width="11" height="11" style="--c:40"/><rect class="rec" x="520" y="70" width="11" height="11" style="--c:40"/><rect class="rec" x="520" y="83" width="11" height="11" style="--c:40"/><rect class="rec" x="520" y="96" width="11" height="11" style="--c:40"/><rect class="rec" x="533" y="18" width="11" height="11" style="--c:41"/><rect class="rec" x="533" y="31" width="11" height="11" style="--c:41"/><rect class="rec" x="533" y="44" width="11" height="11" style="--c:41"/><rect class="rec" x="533" y="57" width="11" height="11" style="--c:41"/><rect class="rec" x="533" y="70" width="11" height="11" style="--c:41"/><rect class="rec" x="533" y="83" width="11" height="11" style="--c:41"/><rect class="rec" x="533" y="96" width="11" height="11" style="--c:41"/><rect class="rec" x="546" y="18" width="11" height="11" style="--c:42"/><rect class="rec" x="546" y="31" width="11" height="11" style="--c:42"/><rect class="rec" x="546" y="44" width="11" height="11" style="--c:42"/><rect class="rec" x="546" y="57" width="11" height="11" style="--c:42"/><rect class="rec" x="546" y="70" width="11" height="11" style="--c:42"/><rect class="rec" x="546" y="83" width="11" height="11" style="--c:42"/><rect class="rec" x="546" y="96" width="11" height="11" style="--c:42"/><rect class="rec" x="559" y="18" width="11" height="11" style="--c:43"/><rect class="rec" x="559" y="31" width="11" height="11" style="--c:43"/><rect class="rec" x="559" y="44" width="11" height="11" style="--c:43"/><rect class="rec" x="559" y="57" width="11" height="11" style="--c:43"/><rect class="rec" x="559" y="70" width="11" height="11" style="--c:43"/><rect class="rec" x="559" y="83" width="11" height="11" style="--c:43"/><rect class="rec" x="559" y="96" width="11" height="11" style="--c:43"/><rect class="rec" x="572" y="18" width="11" height="11" style="--c:44"/><rect class="rec" x="572" y="31" width="11" height="11" style="--c:44"/><rect class="rec" x="572" y="44" width="11" height="11" style="--c:44"/><rect class="rec" x="572" y="57" width="11" height="11" style="--c:44"/><rect class="rec" x="572" y="70" width="11" height="11" style="--c:44"/><rect class="rec" x="572" y="83" width="11" height="11" style="--c:44"/><rect class="rec" x="572" y="96" width="11" height="11" style="--c:44"/><rect class="rec" x="585" y="18" width="11" height="11" style="--c:45"/><rect class="rec" x="585" y="31" width="11" height="11" style="--c:45"/><rect class="rec" x="585" y="44" width="11" height="11" style="--c:45"/><rect class="rec" x="585" y="57" width="11" height="11" style="--c:45"/><rect class="rec" x="585" y="70" width="11" height="11" style="--c:45"/><rect class="rec" x="585" y="83" width="11" height="11" style="--c:45"/><rect class="rec" x="585" y="96" width="11" height="11" style="--c:45"/><rect class="rec" x="598" y="18" width="11" height="11" style="--c:46"/><rect class="rec" x="598" y="31" width="11" height="11" style="--c:46"/><rect class="rec" x="598" y="44" width="11" height="11" style="--c:46"/><rect class="rec" x="598" y="57" width="11" height="11" style="--c:46"/><rect class="rec" x="598" y="70" width="11" height="11" style="--c:46"/><rect class="rec" x="598" y="83" width="11" height="11" style="--c:46"/><rect class="rec" x="598" y="96" width="11" height="11" style="--c:46"/><rect class="rec" x="611" y="18" width="11" height="11" style="--c:47"/><rect class="rec" x="611" y="31" width="11" height="11" style="--c:47"/><rect class="rec" x="611" y="44" width="11" height="11" style="--c:47"/><rect class="rec" x="611" y="57" width="11" height="11" style="--c:47"/><rect class="rec" x="611" y="70" width="11" height="11" style="--c:47"/><rect class="rec" x="611" y="83" width="11" height="11" style="--c:47"/><rect class="rec" x="611" y="96" width="11" height="11" style="--c:47"/><rect class="rec" x="624" y="18" width="11" height="11" style="--c:48"/><rect class="rec" x="624" y="31" width="11" height="11" style="--c:48"/><rect class="rec" x="624" y="44" width="11" height="11" style="--c:48"/><rect class="rec" x="624" y="57" width="11" height="11" style="--c:48"/><rect class="rec" x="624" y="70" width="11" height="11" style="--c:48"/><rect class="rec" x="624" y="83" width="11" height="11" style="--c:48"/><rect class="rec" x="624" y="96" width="11" height="11" style="--c:48"/><rect class="rec" x="637" y="18" width="11" height="11" style="--c:49"/><rect class="rec" x="637" y="31" width="11" height="11" style="--c:49"/><rect class="rec" x="637" y="44" width="11" height="11" style="--c:49"/><rect class="rec" x="637" y="57" width="11" height="11" style="--c:49"/><rect class="rec" x="637" y="70" width="11" height="11" style="--c:49"/><rect class="rec" x="637" y="83" width="11" height="11" style="--c:49"/><rect class="rec" x="637" y="96" width="11" height="11" style="--c:49"/><rect class="rec" x="650" y="18" width="11" height="11" style="--c:50"/><rect class="rec" x="650" y="31" width="11" height="11" style="--c:50"/><rect class="rec" x="650" y="44" width="11" height="11" style="--c:50"/><rect class="rec" x="650" y="57" width="11" height="11" style="--c:50"/><rect class="rec" x="650" y="70" width="11" height="11" style="--c:50"/><rect class="rec" x="650" y="83" width="11" height="11" style="--c:50"/><rect class="rec" x="650" y="96" width="11" height="11" style="--c:50"/><rect class="rec" x="663" y="18" width="11" height="11" style="--c:51"/><rect class="rec" x="663" y="31" width="11" height="11" style="--c:51"/><rect class="rec" x="663" y="44" width="11" height="11" style="--c:51"/><rect class="rec" x="663" y="57" width="11" height="11" style="--c:51"/><rect class="rec" x="663" y="70" width="11" height="11" style="--c:51"/><rect class="rec" x="663" y="83" width="11" height="11" style="--c:51"/><rect class="rec" x="663" y="96" width="11" height="11" style="--c:51"/><rect class="rec" x="676" y="18" width="11" height="11" style="--c:52"/><rect class="rec" x="676" y="31" width="11" height="11" style="--c:52"/><rect class="rec" x="676" y="44" width="11" height="11" style="--c:52"/></g>
+</svg></div>
+        <div class="legend"><span><i class="k-mea"></i>measured by the recorder (2)</span><span><i class="k-rec"></i>estimated by the model (335)</span><span><i class="k-exc"></i>left out, no wind data at A801 (28)</span></div>
+        <figcaption><span class="fig-n">Fig. 5</span> 2025 at station 83967, day by day. Only January 3 and 5 have a reading. Between April 11 and May 8, A801 recorded no wind, so those days were left out instead of being filled with synthetic imputation.</figcaption>
+      </figure>
+
+      <h3 class="h3" data-reveal>Four scripts, each one auditable</h3>
+      <ol class="steps" data-reveal>
+        <li><code>01_exploracao.py</code><p>Reads INMET's CSVs, drops the 10-line header and finds 14,904 negative pyranometer readings at night, caused by radiative cooling.</p></li>
+        <li><code>02_preprocessamento.py</code><p>Applies max(0, R) before summing, aggregates 35,064 hours into 1,461 days and builds 3- and 7-day rolling means of temperature and humidity.</p></li>
+        <li><code>03_modelo_treinamento.py</code><p>Joins the stations (1,061 complete days), splits 80/20 with seed 42 and trains a 100-tree RandomForestRegressor on 10 predictors.</p></li>
+        <li><code>04_predicao_final.py</code><p>Loads the serialized model without retraining, handles the rolling-window edges and writes the final 1,433-day table in INMET's format.</p></li>
+      </ol>
+
+      <dl class="kpis kpis-4" data-reveal>
+        <div><dd>0.9032</dd><dt>R² on the test set, N = 213 days</dt></div>
+        <div><dd>0.85 h</dd><dt>MAE, about 51 min per day</dt></div>
+        <div><dd>1.24 h</dd><dt>RMSE</dt></div>
+        <div><dd>1,433</dd><dt>days in the final table</dt></div>
+      </dl>
+
+      <div class="fig-pair" data-reveal>
+        <figure class="fig">
+          
+<div class="hbars" role="list">
+<div class="hbar" role="listitem">
+    <span class="hbar-label"><code>Rad_Total_KJ</code></span>
+    <span class="hbar-track" aria-hidden="true"><span class="hbar-fill is-accent" style="--r:0.8875"></span></span>
+    <span class="hbar-val">88.75%</span>
+  </div><div class="hbar" role="listitem">
+    <span class="hbar-label"><code>Temp_Min</code></span>
+    <span class="hbar-track" aria-hidden="true"><span class="hbar-fill" style="--r:0.0263"></span></span>
+    <span class="hbar-val">2.63%</span>
+  </div><div class="hbar" role="listitem">
+    <span class="hbar-label"><code>Umidade_Media</code></span>
+    <span class="hbar-track" aria-hidden="true"><span class="hbar-fill" style="--r:0.0175"></span></span>
+    <span class="hbar-val">1.75%</span>
+  </div><div class="hbar" role="listitem">
+    <span class="hbar-label"><code>Temp_Roll_7d</code></span>
+    <span class="hbar-track" aria-hidden="true"><span class="hbar-fill" style="--r:0.0161"></span></span>
+    <span class="hbar-val">1.61%</span>
+  </div><div class="hbar" role="listitem">
+    <span class="hbar-label"><code>Vento_Medio</code></span>
+    <span class="hbar-track" aria-hidden="true"><span class="hbar-fill" style="--r:0.0126"></span></span>
+    <span class="hbar-val">1.26%</span>
+  </div><div class="hbar" role="listitem">
+    <span class="hbar-label">other 5 features</span>
+    <span class="hbar-track" aria-hidden="true"><span class="hbar-fill" style="--r:0.0400"></span></span>
+    <span class="hbar-val">4.00%</span>
+  </div>
+</div>
+          <figcaption><span class="fig-n">Fig. 6</span> Feature importance (impurity reduction). Integrated radiation carries the physical signal; minimum temperature and humidity separate cold dry days from warm partly cloudy ones.</figcaption>
+        </figure>
+        <figure class="fig">
+          
+<div class="seasons" role="list">
+<div class="season" role="listitem">
+    <span class="season-name">Winter</span>
+    <span class="season-bar" aria-hidden="true"><span style="--r:0.6417"></span></span>
+    <span class="season-val">MAE 0.77 h</span>
+    <span class="season-n">N = 49</span>
+  </div><div class="season" role="listitem">
+    <span class="season-name">Spring</span>
+    <span class="season-bar" aria-hidden="true"><span style="--r:0.6583"></span></span>
+    <span class="season-val">MAE 0.79 h</span>
+    <span class="season-n">N = 55</span>
+  </div><div class="season" role="listitem">
+    <span class="season-name">Summer</span>
+    <span class="season-bar" aria-hidden="true"><span style="--r:0.7083"></span></span>
+    <span class="season-val">MAE 0.85 h</span>
+    <span class="season-n">N = 47</span>
+  </div><div class="season" role="listitem">
+    <span class="season-name">Autumn</span>
+    <span class="season-bar" aria-hidden="true"><span style="--r:0.8000"></span></span>
+    <span class="season-val">MAE 0.96 h</span>
+    <span class="season-n">N = 62</span>
+  </div>
+</div>
+          <figcaption><span class="fig-n">Fig. 7</span> Mean absolute error by season on the test set. Autumn has the largest error. The extreme residuals show up on days of fast intermittent cloud.</figcaption>
+        </figure>
+      </div>
+
+      <div class="prose" data-reveal>
+        <p>Why a Random Forest: radiation alone already correlates at r = 0.917 with sunshine duration, but on broken-cloud or foggy days the link between accumulated energy and hours above 120 W/m² stops being linear. The trees capture the interaction with humidity and temperature range without normalizing quantities in different units (kJ/m², °C, %, m/s, mm).</p>
+        <p>The model (Joblib, 6.19 MB) ships inside a Windows executable built with Eel, Plotly and PyInstaller. Bioscience researchers open the 1,433-day series, zoom into periods on the chart, export the CSVs and read the source of all four scripts inside the app, with no Python install. In the final file the estimated column is named <code>Insolacao_Prevista_h</code>, kept apart from the measurements, so anyone citing the data knows what came from a sensor.</p>
+      </div>
+      <aside class="limits" data-reveal aria-labelledby="meteo-limits">
+        <h4 id="meteo-limits">Limitations I have already mapped</h4>
+        <ul>
+          <li>The 80/20 split is random. Neighboring days are autocorrelated and the rolling means share days, so the test score may be optimistic. The next version should use temporal block validation (leave-one-year-out).</li>
+          <li>Wind accounts for 1.26% of importance and still cost 28 days. A secondary model without wind would recover those dates.</li>
+          <li>The model is calibrated to Porto Alegre's latitude and cloud regime. Another city needs recalibration on a co-located pair of stations.</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ResGen atual -->
+<section class="chapter" id="resgen" aria-labelledby="resgen-title">
+  <div class="wrap chapter-grid">
+    <div class="ch-top" data-reveal><p class="ch-n">03</p>
+        <p class="ch-k">Current research</p></div>
+    <header class="ch-head" data-reveal>
+        <h2 id="resgen-title">Predicting antifungal resistance</h2>
+        <p class="ch-sub">ML models linking a yeast's sampling environment and genome to its antifungal resistance profile, for One Health genomic surveillance.</p>
+      </header>
+    <aside class="margin" aria-label="Notes: current research">
+      <div class="margin-in">
+        <dl class="ficha">
+          <div><dt>Fellowship</dt><dd>BIT/CNPq, September 2026 to August 2027</dd></div>
+          <div><dt>Advisor</dt><dd>Prof. Lívia Kmetzsch Rosa e Silva</dd></div>
+          <div><dt>Where</dt><dd>ResGen Initiative, UFRGS Biotechnology Center (CBiot)</dd></div>
+          <div><dt>Stack</dt><dd>Python, pandas, scikit-learn, SHAP, PCA, VCF, Django, Joblib</dd></div>
+        </dl>
+      </div>
+    </aside>
+    <div class="chapter-body">
+      <div class="prose" data-reveal>
+        <p>The project starts from 119 yeast isolates of the genus <i>Candida</i> sampled in the Arroio Dilúvio stream in Porto Alegre between 2023 and 2026, all with whole genomes sequenced. For each isolate I join sampling date and coordinates, phenotypic susceptibility profile, INMET weather data, water physicochemical parameters, antimicrobial quantification and landscape ecology such as land use and urban density.</p>
+        <p>The question is whether the sampling environment predicts each isolate's category (susceptible, intermediate or resistant), and which genomic mechanisms show up alongside each environmental pressure.</p>
+      </div>
+
+      <ol class="plan" data-reveal>
+        <li class="is-now">
+          <span class="plan-when">Sep to Nov 2026<em>in progress</em></span>
+          <span class="plan-what">Python pipeline to extract, clean and normalize environmental, phenotypic and genomic data from ResGen DB, a relational database.</span>
+        </li>
+        <li>
+          <span class="plan-when">Dec 2026 to Feb 2027</span>
+          <span class="plan-what">Imputation and normalization, Pearson or Spearman correlation, PCA. Supervised classifiers in scikit-learn with hyperparameter tuning and k-fold cross-validation.</span>
+        </li>
+        <li>
+          <span class="plan-when">Mar to May 2027</span>
+          <span class="plan-what">SNPs, copy-number variants and ploidy changes, read from VCF files and encoded as feature matrices. SHAP and feature importance to link environmental variables to resistance mechanisms.</span>
+        </li>
+        <li>
+          <span class="plan-when">Jun to Aug 2027</span>
+          <span class="plan-what">The best model, serialized with joblib or pickle, wired into ResGen's Django back end as a proof of concept for an analytics module.</span>
+        </li>
+      </ol>
+
+      <figure class="fig" data-reveal>
+        
+<div class="sir" role="list">
+<div class="sir-row" role="listitem" aria-label="Fluconazole: 59 susceptible, 0 intermediate, 89 resistant (n = 148)">
+    <span class="sir-name" aria-hidden="true">Fluconazole</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:39.86%"></span><span class="i" style="--w:0.00%"></span><span class="r" style="--w:60.14%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>60%</b> R <span>n = 148</span></span>
+  </div><div class="sir-row" role="listitem" aria-label="Itraconazole: 81 susceptible, 0 intermediate, 105 resistant (n = 186)">
+    <span class="sir-name" aria-hidden="true">Itraconazole</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:43.55%"></span><span class="i" style="--w:0.00%"></span><span class="r" style="--w:56.45%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>56%</b> R <span>n = 186</span></span>
+  </div><div class="sir-row" role="listitem" aria-label="5-Flucytosine: 32 susceptible, 0 intermediate, 24 resistant (n = 56)">
+    <span class="sir-name" aria-hidden="true">5-Flucytosine</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:57.14%"></span><span class="i" style="--w:0.00%"></span><span class="r" style="--w:42.86%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>43%</b> R <span>n = 56</span></span>
+  </div><div class="sir-row" role="listitem" aria-label="Voriconazole: 108 susceptible, 1 intermediate, 51 resistant (n = 160)">
+    <span class="sir-name" aria-hidden="true">Voriconazole</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:67.50%"></span><span class="i" style="--w:0.63%"></span><span class="r" style="--w:31.87%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>32%</b> R <span>n = 160</span></span>
+  </div><div class="sir-row" role="listitem" aria-label="Amphotericin B: 132 susceptible, 7 intermediate, 28 resistant (n = 167)">
+    <span class="sir-name" aria-hidden="true">Amphotericin B</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:79.04%"></span><span class="i" style="--w:4.19%"></span><span class="r" style="--w:16.77%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>17%</b> R <span>n = 167</span></span>
+  </div><div class="sir-row" role="listitem" aria-label="Caspofungin: 125 susceptible, 2 intermediate, 25 resistant (n = 152)">
+    <span class="sir-name" aria-hidden="true">Caspofungin</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:82.24%"></span><span class="i" style="--w:1.32%"></span><span class="r" style="--w:16.45%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>16%</b> R <span>n = 152</span></span>
+  </div><div class="sir-row" role="listitem" aria-label="Ketoconazole: 27 susceptible, 0 intermediate, 5 resistant (n = 32)">
+    <span class="sir-name" aria-hidden="true">Ketoconazole</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:84.38%"></span><span class="i" style="--w:0.00%"></span><span class="r" style="--w:15.63%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>16%</b> R <span>n = 32</span></span>
+  </div><div class="sir-row" role="listitem" aria-label="Nystatin: 30 susceptible, 0 intermediate, 2 resistant (n = 32)">
+    <span class="sir-name" aria-hidden="true">Nystatin</span>
+    <span class="sir-bar" aria-hidden="true"><span class="s" style="--w:93.75%"></span><span class="i" style="--w:0.00%"></span><span class="r" style="--w:6.25%"></span></span>
+    <span class="sir-val" aria-hidden="true"><b>6%</b> R <span>n = 32</span></span>
+  </div>
+</div>
+<div class="legend" aria-hidden="true"><span><i class="k-s"></i>susceptible</span><span><i class="k-i"></i>intermediate</span><span><i class="k-r"></i>resistant</span></div>
+        <figcaption><span class="fig-n">Fig. 8</span> Susceptibility profile of fungal isolates by antifungal tested, as shown on the ResGen platform in 2026, sorted by share of resistant isolates. It covers the platform's whole fungal collection, not only the 119 study isolates, and it is the kind of label the classifiers will predict.</figcaption>
+      </figure>
+      <div class="prose" data-reveal>
+        <p>Today the project sits at level 2 of the Technology Readiness Level scale: the concept is formulated and there is no analytical proof of concept on this data yet. By the end of the fellowship the goal is TRL 3, with a validated and documented pipeline that a future API in the ResGen DB dashboard can build on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 FINOVA -->
+<section class="chapter" id="finova" aria-labelledby="finova-title">
+  <div class="wrap chapter-grid">
+    <div class="ch-top" data-reveal><p class="ch-n">04</p>
+        <p class="ch-k">Research, first phase</p></div>
+    <header class="ch-head" data-reveal>
+        <h2 id="finova-title">ResGen DB and the FINOVA Highlight Award</h2>
+        <p class="ch-sub">Scientific software engineering for a public database of antimicrobial-resistance genomes and metagenomes.</p>
+      </header>
+    <aside class="margin" aria-label="Notes: first research phase">
+      <div class="margin-in">
+        <dl class="ficha">
+          <div><dt>Period</dt><dd>February to September 2026</dd></div>
+          <div><dt>Advisor</dt><dd>Prof. Lívia Kmetzsch Rosa e Silva</dd></div>
+          <div><dt>Award</dt><dd>Highlight Award, 16th FINOVA, Salão UFRGS 2026</dd></div>
+          <div><dt>Stack</dt><dd>Python, Django, HTML, CSS, JavaScript, amCharts 5, scikit-learn</dd></div>
+        </dl>
+        <p class="margin-link"><a href="https://www.ufrgs.br/resgen" rel="noopener" target="_blank">ufrgs.br/resgen<span class="sr-only"> (opens in a new tab)</span><svg class="i-ext" aria-hidden="true" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2 3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a></p>
+      </div>
+    </aside>
+    <div class="chapter-body">
+      <div class="prose" data-reveal>
+        <p>The ResGen Initiative runs genomic and metagenomic monitoring of antimicrobial resistance in human, environmental, animal and food samples. In my first phase at the lab I maintained the public database and built new features for the Django web app, with interactive charts in amCharts 5. The project was titled "Integrated pipeline and web-based database for genomic and metagenomic monitoring of antimicrobial resistance".</p>
+        <ul class="ticks">
+          <li>Python scripts that automate reading and loading tabular data from collaborators and INMET weather series.</li>
+          <li>I restructured the existing data into a standardized model with a data dictionary, so different sources line up.</li>
+          <li>Batch loading with transactional control (<code>transaction.atomic</code>) and record validation through external APIs.</li>
+          <li><span class="nw">METEO-SOL</span> started here, to join radiation and climate with the microorganism sampling data.</li>
+        </ul>
+      </div>
+
+      <dl class="dbstats" data-reveal>
+        <div><dd>1,197</dd><dt>entries</dt></div>
+        <div><dd>589</dd><dt>isolate genomes</dt></div>
+        <div><dd>608</dd><dt>metagenomes</dt></div>
+        <div><dd>94</dd><dt>microbial species</dt></div>
+        <div><dd>29</dd><dt>antimicrobials tested</dt></div>
+        <div><dd>26</dd><dt>sample types</dt></div>
+      </dl>
+      <p class="note" data-reveal>ResGen DB figures as shown on the platform, currently in testing at ufrgs.br/resgen.</p>
+
+      <h3 class="h3" data-reveal>Highlight Award, 16th FINOVA</h3>
+      <div class="prose" data-reveal>
+        <p>The work received an award at UFRGS's 16th Technology Innovation Fair (FINOVA), part of Salão UFRGS 2026, held October 19 to 23 at Campus do Vale. In the video I present the research in three minutes.</p>
+      </div>
+      <div class="award" data-reveal>
+        <figure class="award-video">
+          <div class="video" data-video>
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/img/finova-video-poster.jpg" aria-describedby="video-desc">
+              <source src="../assets/video/finova-720p.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption id="video-desc"><span class="fig-n">Video</span> FINOVA presentation, 3 min, in Portuguese with burned-in Portuguese subtitles. The file (23 MB) only loads when you press play.</figcaption>
+        </figure>
+        <div class="award-row">
+          <figure class="award-photo">
+          <picture>
+            <source type="image/webp" srcset="../assets/img/finova-ufrgs-640.webp 640w, ../assets/img/finova-ufrgs-1000.webp 1000w" sizes="(min-width: 1024px) 280px, 50vw">
+            <img src="../assets/img/finova-ufrgs-1000.jpg" width="1000" height="1147" loading="lazy" decoding="async" alt="Henrique sitting in front of the UFRGS sign, holding the FINOVA certificate and medal.">
+          </picture>
+          <figcaption>With the certificate and medal, in front of the UFRGS sign.</figcaption>
+        </figure>
+          <figure class="award-cert">
+          <a href="../assets/img/certificado-finova.jpg" target="_blank" rel="noopener">
+            <picture>
+              <source type="image/webp" srcset="../assets/img/certificado-finova.webp">
+              <img src="../assets/img/certificado-finova.jpg" width="1926" height="1318" loading="lazy" decoding="async" alt="UFRGS certificate stating that Henrique's work received an award at the 16th Technology Innovation Fair, October 19 to 23, 2026, at Campus do Vale.">
+            </picture>
+            <span class="sr-only">(opens the full-size image in a new tab)</span>
+          </a>
+          <figcaption>Award certificate, opens at full size.</figcaption>
+        </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trajetória -->
+<section class="band" id="trajetoria" aria-labelledby="path-title">
+  <div class="wrap">
+    <h2 id="path-title" class="band-title" data-reveal>Background</h2>
+    <ol class="timeline" data-reveal>
+      <li><span class="tl-when">2018 to 2023</span><span class="tl-what"><b>Automotive embedded electronics and reprogramming</b>Oficina Alex Reis, Porto Alegre. Hardware and software maintenance of injection, ABS, airbag and body control modules; map swaps and checksum verification.</span></li>
+      <li><span class="tl-when">ongoing, to 2028</span><span class="tl-what"><b>B.Sc. in Physics, UFRGS</b>5th semester, expected to finish in the first half of 2028. Focus on quantitative and computational methods.</span></li>
+      <li><span class="tl-when">Feb 2026</span><span class="tl-what"><b>Joined the UFRGS Biotechnology Center (CBiot)</b>ResGen Initiative: database, Django app and <span class="nw">METEO-SOL</span>.</span></li>
+      <li><span class="tl-when">Sep 2026</span><span class="tl-what"><b>BIT/CNPq fellowship</b>Plan for ML prediction of antifungal resistance, through August 2027.</span></li>
+      <li><span class="tl-when">Oct 2026</span><span class="tl-what"><b>Highlight Award at the 16th FINOVA</b>Salão UFRGS 2026, Campus do Vale.</span></li>
+      <li><span class="tl-when">Nov 2026</span><span class="tl-what"><b>OBEY 3.4.3</b>2,406 tests, 33 of 34 security invariants proven by execution.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Ferramentas -->
+<section class="band band-alt" id="ferramentas" aria-labelledby="stack-title">
+  <div class="wrap">
+    <h2 id="stack-title" class="band-title" data-reveal>Tools</h2>
+    <div class="stack" data-reveal>
+      <div><h3>Generative AI and LLMs</h3><p>LLMs, RAG, autonomous agents, MCP, prompt engineering, fine-tuning, PyTorch, Hugging Face, Ollama</p></div>
+      <div><h3>Machine learning and data</h3><p>pandas, NumPy, SciPy, scikit-learn, Random Forest, PCA, SHAP, stratified cross-validation, ETS, vector databases, genomic data</p></div>
+      <div><h3>Software engineering</h3><p>Python, Django, APIs REST, inference pipelines, Pytest, Git, GitHub, CI/CD, OpenTelemetry</p></div>
+      <div><h3>Mathematics</h3><p>Differential and integral calculus, linear algebra, numerical methods, statistical mechanics, probabilistic modeling</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section class="contact" id="contato" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div data-reveal>
+      <h2 id="contact-title" class="contact-title">Contact</h2>
+      <p class="contact-lead">I reply by email or WhatsApp, in Portuguese or English.</p>
+    </div>
+    <ul class="contact-list" data-reveal>
+      <li><span>E-mail</span><a href="mailto:riquefd0103@gmail.com">riquefd0103@gmail.com</a><button class="copy" type="button" data-copy="riquefd0103@gmail.com" data-done="Copied">Copy</button></li>
+      <li><span>WhatsApp</span><a href="https://wa.me/5551991375180" rel="noopener" target="_blank">+55 51 99137-5180<span class="sr-only"> (opens in a new tab)</span><svg class="i-ext" aria-hidden="true" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2 3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/henrique-delfino-186851209/" rel="noopener" target="_blank">linkedin.com/in/henrique-delfino-186851209<span class="sr-only"> (opens in a new tab)</span><svg class="i-ext" aria-hidden="true" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2 3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a></li>
+      <li><span>GitHub</span><a href="https://github.com/henriquefd" rel="noopener" target="_blank">github.com/henriquefd<span class="sr-only"> (opens in a new tab)</span><svg class="i-ext" aria-hidden="true" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2 3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a></li>
+      <li><span>Résumé</span><a href="../assets/docs/henrique-delfino-curriculo.pdf" target="_blank" rel="noopener">PDF, 1 page, in Portuguese<span class="sr-only"> (opens in a new tab)</span></a></li>
+    </ul>
+    <p class="live" role="status" aria-live="polite" data-live></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>HTML, CSS and JavaScript with no framework, hosted on GitHub Pages. Updated November 2026.</p>
+    <p><a href="../index.html" hreflang="pt-BR" lang="pt-BR" data-lang-link>Ler em português</a> · <a href="#inicio">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>
